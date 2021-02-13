@@ -1,0 +1,255 @@
+$blue-color: #3d78ff
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html
+    font-size: 62.5%
+    scroll-behavior: smooth
+
+body
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem
+
+.hero-shadow
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,.7)
+    z-index: -1
+.additional-text
+    font-size: 1.8rem
+.top-hero
+    position: relative
+    height: 20rem
+    z-index: 0
+    background-size: cover
+.top-hero-text
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+    font-size: 3.6rem
+    text-transform: uppercase
+.bg-blue
+    background-color: rgba(61,120,255,.6)
+    // border-color: $blue-color
+    box-shadow: 0 0 0 .15rem $blue-color
+.navbar-toggler
+    font-size: 2.5rem
+    padding: 0.5rem 2rem
+
+/*************/
+/*****NAV*****/
+/*************/
+nav
+    .container
+        .navbar-brand
+            p
+                font-weight: bold
+                font-size: 2.5rem
+                letter-spacing: 3px
+                i
+                    color: $blue-color
+                span
+                    color: $blue-color
+        .navbar-nav
+            a
+                font-weight: bold
+                font-size: 1.8rem
+/*************/
+/****HEADER***/
+/*************/
+header
+    .carousel-item
+        position: relative
+        height: 400px
+        background-position: center
+        background-size: cover
+        z-index: 0
+    .item-one
+        background-image: url(../img/amg1.jpg)
+    .item-two
+        background-image: url(../img/fer1.jpg)
+    .item-three
+        background-image: url(../img/mustang1.jpg)
+
+/************/
+/****MAIN****/
+/************/
+main
+    .home-boxes
+        .container
+            .row
+                .box
+                    i
+                        font-size: 5rem
+                        color: $blue-color
+
+                    hr
+                        color: $blue-color
+                        height: 10px
+                        border-radius: 50px
+    .home-passion
+        position: relative
+        background-image: url('../img/shelby1.jpg')
+        height: 400px
+        background-size: cover
+        background-position: center
+        z-index: 0
+
+    .home-brand
+        .container
+            span
+                color: $blue-color
+        .jumbotron
+            background-color: #eee
+
+/***********************/
+/****ABOUT US**********/
+/*********************/
+header
+    ////////////////ABOUTUS-TOP
+    .aboutus-top
+        background-image: url('../img/aboutus/highway1.jpg')
+        background-position: bottom
+        p
+            text-decoration: underline $blue-color
+    ////////////////ABOUTUS-TOP-TEXT
+main
+    .aboutus-toptext
+        p
+            i
+                color: $blue-color
+            span
+                color: $blue-color
+    ////////////////ABOUTUS-DESCRIPTION
+    .aboutus-description
+        background-color: rgba(0,0,0,.03)
+        h2
+            text-decoration: underline $blue-color
+            font-weight: bold
+        .aboutus-img
+            height: 300px
+            background-image: url(../img/aboutus/ferrari1.jpg)
+            background-position: center
+            background-size: cover
+        .aboutus-text
+            padding: 2em 0
+
+    ////////////////ABOUTUS-CARDS       
+    .aboutus-cards
+        .container
+            .row
+                .col-md-6
+                    .cardd
+                        i
+                            font-size: 3rem
+                        .textarea
+                            p
+                                font-size: 1.8rem
+                            h3
+                                font-size: 2.2rem
+        .bg-b
+            background-color: $blue-color
+/***********************/
+/****SERVICES**********/
+/*********************/
+main
+    .services-top
+        background-image: url(../img/services/fiat1.jpg)
+        background-position: center
+        text-decoration: underline $blue-color
+    .ourservices
+        .services
+            .accordion
+                .accordion-item
+                    .accordion-image
+                        position: relative
+                        background-size: cover
+                        background-position: center
+                        height: 250px
+                        z-index: 0
+                    .img1
+                        background-image: url('../img/services/bmw1.jpg')
+                    .img2
+                        background-image: url('../img/services/ford1.jpg')
+                    .img3
+                        background-image: url('../img/services/silnik1.jpg')
+                    .img4
+                        background-image: url('../img/services/fiat1.jpg')
+/***********************/
+/****PROJECTS**********/
+/*********************/
+main
+    .projects-top
+        background-image: url(../img/projects/tesla1.jpg)
+        background-position: center
+        text-decoration: underline $blue-color
+    .cards
+        .card
+            img
+                height: 300px
+                object-fit: cover
+/***********************/
+/****CONTACT***********/
+/*********************/
+main
+    .contact-top
+        background-image: url(../img/contact/shelby1.jpg)
+        background-position: center
+        text-decoration: underline $blue-color
+    .contact-formula
+        h3, h4
+            font-weight: bold
+        h3
+            font-size: 2rem
+        h4
+            font-size: 1.6rem
+        p
+            font-size: 1.3rem
+        .logo
+            i
+                color: $blue-color
+            span
+                color: $blue-color
+
+
+@media(min-width: 992px)
+    .aboutus-description
+        padding: 0
+        .aboutus-img
+            height: auto
+            transform: skew(-15deg)
+    .aboutus-shadow
+        box-shadow: inset 0 5px 10px -5px rgba(0,0,0,.4)
+    .aboutus-text
+        transform: skew(-15deg)
+        padding: 2em 0
+
+@media (min-width: 1400px)
+    header
+        .carousel-item
+            height: 600px
+        .item-one
+            background-image: url(../img/amg2.jpg)
+        .item-two
+            background-image: url(../img/fer2.jpg)
+        .item-three
+            background-image: url(../img/mustang2.jpg)
+    main
+        .home-passion
+            height: 600px
+            background-image: url('../img/shelby2.jpg')
+        .aboutus-top
+            background-image: url('../img/aboutus/highway2.jpg')
+        .services-top
+            background-image: url(../img/services/fiat2.jpg)
+        .projects-top
+            background-image: url(../img/projects/tesla2.jpg)
+        .contact-top
+            background-image: url(../img/contact/shelby2.jpg)
+        
